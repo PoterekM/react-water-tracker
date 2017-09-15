@@ -9,7 +9,7 @@ function PlantDetail(props) {
     <h4>Plant Type: {props.plantType}</h4>
     <h4>Soil Type: {props.soilType}</h4>
   <h4>Time Watered: {props.timeWatered}</h4>
-    <h4>Time Since Watered: {props.timeSinceWatered}</h4>
+<h4>Time Since Watered: {props.timeSinceWatered}</h4>
   </div>
   )
 }
