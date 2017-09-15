@@ -1,5 +1,5 @@
 # Plant Watering Application
-#### _Epicodus Independent Project: React Fundamentals, September 6th, 2017_
+#### _Epicodus Independent Project: React Fundamentals, September 15th, 2017_
 **_By Michelle Poterek_**
 
 
