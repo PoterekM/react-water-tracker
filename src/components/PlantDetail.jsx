@@ -10,7 +10,7 @@ function PlantDetail(props) {
   <h4>Watering Schedule: {props.waterSchedule}</h4>
     <h4>Soil Type: {props.soilType}</h4>
     <h4>Time Watered: {props.timeWatered}</h4>
-    <h4>Time Since Watered: {props.timeSinceWatered}</h4>
+  <h4>Time Since Watered: {props.timeSinceWatered}</h4>
   <PlantWater/>
   </div>
   )
