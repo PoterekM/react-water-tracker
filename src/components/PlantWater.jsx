@@ -1,18 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Moment from "moment";
 
-function PlantWater(props) {
-  return(
-    <div>
-      <h1>I'm a button!</h1>
+class PlantWater extends React.Component {
+  constructor(props) {
+    super(props);
+    this.plantWater = this.plantWater.bind(this);
+    this.state = {
+      
+    }
+  }
 
-    </div>
-  )
+  plantWater() {
+    var newWater = new Date().toLocalTimeString();
+    this.setState({water: newWater});
+  }
+
+  render() {
+    return(
+      <div>
+        <p>Time Since Water: {this.state.water}</p>
+        <button onClick={this.plantWater}>Track Water!</button>
+      </div>
+    )
+  }
+
+
 }
 
-PlantWater.propTypes = {
-
-}
 
 
 export default PlantWater;
