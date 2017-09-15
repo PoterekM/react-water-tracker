@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from  "prop-types";
-import CreatePlant from "./CreatePlant.jsx";
-import PlantList from "./PlantList.jsx"
+import CreatePlant from "./CreatePlant";
+import PlantList from "./PlantList"
 
 class Plant extends React.Component {
   constructor(props) {
@@ -23,14 +23,14 @@ class Plant extends React.Component {
     return (
       <div>
         <CreatePlant addNewPlantToList= {this.addNewPlantToList}/>
-        <PlantList/>
+        <PlantList plants={this.state.masterPlant}/>
       </div>
     )
   }
 }
 
 Plant.propTypes = {
-  onNewCreatePlant: PropTypes.func,
+  addNewPlantToList: PropTypes.func,
 }
 
-export default Plant;
+export default Plant

@@ -1,18 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import PlantDetail from "./PlantDetail"
 
 function PlantList(props) {
-  console.log(props)
   return (
     <div>
-      <h3>Here's where the plant list will live!!</h3>
-    <p>Plant name: {props.name}</p>
-    </div>
+      <h3>{props.plants.map((plant, index) =>
+      <PlantDetail
+       name= {plant.name}
+       plantType={plant.plantType}
+       soilType={plant.soilType}
+       timeWatered={plant.timeWatered}
+       timeSinceWatered={plant.timeSinceWatered}
+       key={index}/>
+      )}
+    </h3>
+  </div>
   );
 }
 
 PlantList.propTpes = {
-  name: PropTypes.string,
+  plants: PropTypes.array,
 }
 
 export default PlantList;
