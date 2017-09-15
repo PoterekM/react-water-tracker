@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import Form from "./Form";
+import Plant from "./Plant";
 
 
 function App(props){
   return (
     <div>
       <Header/>
-      <Form/>
+      <Plant/>
     </div>
   );
 }
