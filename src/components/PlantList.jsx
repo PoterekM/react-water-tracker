@@ -21,6 +21,7 @@ function PlantList(props) {
 
 PlantList.propTpes = {
   plants: PropTypes.array,
+
 }
 
 export default PlantList;
