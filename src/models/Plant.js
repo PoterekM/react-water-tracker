@@ -8,4 +8,5 @@ class Plant {
   }
 
 }
+
 export default Plant;

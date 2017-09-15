@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import PlantModel from "../models/PlantModel.js";
+import Plant from "../models/Plant.js";
 
 class CreatePlant extends React.Component {
 
@@ -17,7 +17,7 @@ class CreatePlant extends React.Component {
     const {_timeWatered} = this.refs;
     const {_timeSinceWatered} = this.refs;
     var newPlant = new Plant(_name.value, _plantType.value, _soilType.value, _timeWatered.value, _timeSinceWatered.value);
-    this.props.onNewCreatePlant(newPlant);
+    console.log(this.name);
   }
 
   render() {
@@ -61,8 +61,10 @@ class CreatePlant extends React.Component {
   }
 }
 
+
+
   CreatePlant.propTypes = {
-    onNewCreatePlant: PropTypes.func,
+
   }
 
 
