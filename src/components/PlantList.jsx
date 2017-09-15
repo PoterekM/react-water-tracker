@@ -6,7 +6,7 @@ function PlantList(props) {
   return (
     <div>
       <h3>Here's where the plant list will live!!</h3>
-    {props.name}
+    <p>Plant name: {props.name}</p>
     </div>
   );
 }

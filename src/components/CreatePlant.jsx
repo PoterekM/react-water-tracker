@@ -6,10 +6,10 @@ class CreatePlant extends React.Component {
 
   constructor(props) {
     super(props);
-    this.newCreatePlant = this.newCreatePlant.bind(this);
+    this.preparePlantCreation = this.preparePlantCreation.bind(this);
   }
 
-  newCreatePlant(event) {
+  preparePlantCreation(event) {
     event.preventDefault()
     const {_name} = this.refs;
     const {_plantType} = this.refs;
@@ -17,13 +17,14 @@ class CreatePlant extends React.Component {
     const {_timeWatered} = this.refs;
     const {_timeSinceWatered} = this.refs;
     var newPlant = new Plant(_name.value, _plantType.value, _soilType.value, _timeWatered.value, _timeSinceWatered.value);
-    console.log(this.name);
+    this.props.addNewPlantToList(newPlant);
+    console.log(newPlant.name);
   }
 
   render() {
     return (
       <div>
-        <form onSubmit={this.newCreatePlant}>
+        <form onSubmit={this.preparePlantCreation}>
           <input
             ref="_name"
             type="text"
@@ -64,7 +65,7 @@ class CreatePlant extends React.Component {
 
 
   CreatePlant.propTypes = {
-
+    addNewPlantToList: PropTypes.func,
   }
 
 
