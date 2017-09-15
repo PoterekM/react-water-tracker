@@ -1,13 +1,12 @@
 import Moment from "moment";
 
 class Plant {
-  constructor(name, plantType, soilType, timeWatered, timeSinceWatered) {
+  constructor(name, plantType, soilType, timeWatered) {
     this.name = name;
     this.plantType = plantType;
     this.soilType = soilType;
     this.timeWatered = new Moment();
-    this.timeSinceWatered = this.setTimeSinceWateredtimeSinceWatered();
-
+    this.timeSinceWatered = this.setTimeSinceWatered();
   }
 
   setTimeSinceWatered() {
