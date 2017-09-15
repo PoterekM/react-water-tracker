@@ -66,7 +66,6 @@ class CreatePlant extends React.Component {
 
   CreatePlant.propTypes = {
     addNewPlantToList: PropTypes.func,
-
   }
 
 
