@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Moment from "moment";
-import UpdateTime from "./UpdateTime";
+
 
 class PlantWater extends React.Component {
   constructor(props) {
@@ -13,7 +13,10 @@ class PlantWater extends React.Component {
   }
 
   plantWater() {
-    var addWater = new Date().toLocaleTimeString();
+    var date = new Date().toLocaleDateString();
+    var time = new Date().toLocaleTimeString();
+    var dateTime = (time + " on " + date);
+    var addWater = dateTime;
     this.setState({water: addWater});
 
   }
@@ -22,7 +25,6 @@ class PlantWater extends React.Component {
     return(
       <div>
         <p>Last Time watered: {this.state.water}</p>
-        <UpdateTime/>
         <button onClick={this.plantWater}>Track Water!</button>
       </div>
     )
