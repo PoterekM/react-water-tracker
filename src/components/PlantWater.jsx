@@ -7,13 +7,14 @@ class PlantWater extends React.Component {
     super(props);
     this.plantWater = this.plantWater.bind(this);
     this.state = {
-      
+      water: 'Unknown',
     }
   }
 
+
   plantWater() {
-    var newWater = new Date().toLocalTimeString();
-    this.setState({water: newWater});
+    var addWater = new Date().toLocaleTimeString();
+    this.setState({water: addWater});
   }
 
   render() {
