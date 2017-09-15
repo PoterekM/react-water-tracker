@@ -1,10 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
 function App(props){
   return (
     <div>
-      <h3>Yes, Hello!</h3>
-    <p><em>I am a react application!</em></p>
+      <Header/>
     </div>
   );
 }
