@@ -18,7 +18,6 @@ class PlantWater extends React.Component {
     var dateTime = (time + " on " + date);
     var addWater = dateTime;
     this.setState({water: addWater});
-
   }
 
   render() {
@@ -32,7 +31,6 @@ class PlantWater extends React.Component {
 
 
 }
-
 
 
 export default PlantWater;

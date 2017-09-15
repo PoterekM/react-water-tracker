@@ -11,7 +11,7 @@ function PlantDetail(props) {
     <h4>Soil Type: {props.soilType}</h4>
 
     <h4>This plant has been around for: {props.timeSinceWatered}</h4>
-  <PlantWater/>
+  <PlantWater timeSinceWatered={this.timeSinceWatered}/>
   </div>
   )
 }
