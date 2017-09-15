@@ -15,8 +15,9 @@ class CreatePlant extends React.Component {
     const {_name} = this.refs;
     const {_plantType} = this.refs;
     const {_soilType} = this.refs;
+    const {_waterSchedule} = this.refs;
     const {_timeWatered} = this.refs;
-    var newPlant = new Plant(_name.value, _plantType.value, _soilType.value, _timeWatered.value);
+    var newPlant = new Plant(_name.value, _plantType.value, _soilType.value, _waterSchedule.value, _timeWatered.value);
     this.props.addNewPlantToList(newPlant);
   }
 
@@ -41,6 +42,12 @@ class CreatePlant extends React.Component {
             type="text"
             id="soilType"
             placeholder="Soil Type"
+          />
+          <input
+            ref="_waterSchedule"
+            type="text"
+            id="waterSchedule"
+            placeholder="WaterSchedule"
           />
           <input
             ref="_timeWatered"

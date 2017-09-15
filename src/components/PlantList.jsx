@@ -10,6 +10,7 @@ function PlantList(props) {
        name= {plant.name}
        plantType={plant.plantType}
        soilType={plant.soilType}
+       waterSchedule={plant.waterSchedule}
        timeWatered={plant.timeWatered}
        timeSinceWatered={plant.timeSinceWatered}
        key={index}/>
