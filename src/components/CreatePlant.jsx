@@ -25,28 +25,32 @@ class CreatePlant extends React.Component {
       <div>
         <form onSubmit={this.preparePlantCreation}>
           <input
+            required
             ref="_name"
             type="text"
             id="name"
             placeholder="Plant Name"
           />
           <input
+            required
             ref="_plantType"
             type="text"
             id="plantType"
             placeholder="Plant Type"
           />
           <input
+            required
             ref="_soilType"
             type="text"
             id="soilType"
             placeholder="Soil Type"
           />
           <input
+            required
             ref="_waterSchedule"
             type="text"
             id="waterSchedule"
-            placeholder="WaterSchedule"
+            placeholder="Water Schedule"
           />
         <button type="submit">Add new Plant!</button>
         </form>
