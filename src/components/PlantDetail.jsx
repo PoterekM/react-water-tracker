@@ -18,7 +18,7 @@ function PlantDetail(props) {
 
 PlantDetail.propTypes = {
   name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  plantType: PropTypes.string.isRequired,
   soilType: PropTypes.string.isRequired,
   waterSchedule: PropTypes.string.isRequired,
   timeSinceWatered: PropTypes.string,
