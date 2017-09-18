@@ -48,7 +48,6 @@ class Plant extends React.Component {
 
 Plant.propTypes = {
   addNewPlantToList: PropTypes.func,
-
 }
 
 export default Plant
